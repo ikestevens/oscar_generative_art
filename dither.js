@@ -7,7 +7,7 @@ let matrix = [
 ];
 
 function preload() {
-  img = loadImage('new_colors_image.png');
+  img = loadImage('final_image.png');
 }
 
 function setup() {
