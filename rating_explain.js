@@ -1,12 +1,20 @@
-const width = 1280;
+const width = 500;
 const height = 720;
 const bend = 30;
 
-const movie_num = [10,10,8,9,8,9,9,8,8,9,9,9,10,10,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,10,10,10,10,10,10,10,10,12,12,10,8,5,5,5,3];
+const movie_num = [7];
 movie_num.reverse();
 const year_length = movie_num.length;
 
-import {movie_dict} from './movie_dict.js';
+let movie_dict = {"2022":
+{"All Quiet on the Western Front_2":
+{"female_director": true, "best_picture": false, "runtime": 50, "rating": 90},
+"Avatar: The Way of Water": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 100},
+"The Banshees of Inisherin": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 96},
+"Elvis": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 93},
+"Everything Everywhere All at Once": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 87},
+"The Fabelmans": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 81},
+"T\u00e1r": {"female_director": false, "best_picture": false, "runtime": 50, "rating": 70}}}
 
 // block dimensions
 let block_horiz = width/year_length;
@@ -17,7 +25,7 @@ let ratings_array = [];
 let best_array = [];
 
 let best_picture_runtime = null; // default value
-for (let i = 1928; i < 2023; i++) {
+for (let i = 2022; i < 2023; i++) {
   let runtimes = [];
   let genders = [];
   let ratings = [];
